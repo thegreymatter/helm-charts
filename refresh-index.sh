@@ -1,0 +1,1 @@
+helm repo index --url https://thegreymatter.github.io/helm-charts/ .
