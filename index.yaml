@@ -1,0 +1,28 @@
+apiVersion: v1
+entries:
+  airbyte:
+  - apiVersion: v2
+    appVersion: 0.39.14-alpha
+    created: "2022-06-08T14:08:52.370466+03:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.x.x
+    - condition: logs.minio.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    description: Helm chart to deploy airbyte
+    digest: d9542957e92a499d9eaa1386147800913f098b4ab9e54fa5fb221bb5aee96a45
+    name: airbyte
+    type: application
+    urls:
+    - https://thegreymatter.github.io/helm-charts/airbyte-0.3.4.tgz
+    version: 0.3.4
+generated: "2022-06-08T14:08:52.357274+03:00"
